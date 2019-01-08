@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="height:100%">
+
+<head>
+  <title> Envoy Playground </title>
+  <link data-name="vs/editor/editor.main" rel="stylesheet" href="./node_modules/monaco-editor/dev/vs/editor/editor.main.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <script>var require = { paths: { 'vs': './node_modules/monaco-editor/dev/vs' } };</script>
+  <script src="./node_modules/monaco-editor/dev/vs/loader.js"></script>
+  <script src="./node_modules/monaco-editor/dev/vs/editor/editor.main.nls.js"></script>
+  <script src="./node_modules/monaco-editor/dev/vs/editor/editor.main.js"></script>
+  <script src="/env.js"></script>
+</head>
+
+<body>
+  <section class="main">
+    <div class="edit">
+      <div class="edit-header">
+        <span class="title"> Envoy config: </span>
+        <span id="runButton" class="runButton">Apply -></span>
+      </div>
+      <div class="monaco" id="monaco-container"></div>
+    </div>
+    <div class="result">
+      <iframe id="resIframe"></iframe>
+    </div>
+  </section>
+  <script type="text/javascript" src="./index.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: envoy-playground-config
+  labels:
+    app: envoy-playground
+data:
+  serviceDiscovery.envoyListenerPort: "32548"

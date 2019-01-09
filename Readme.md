@@ -7,6 +7,8 @@ It's a Kubernetes pod with a few containers:
 
 ## Example
 
+![example of host header manipulation](./example.png)
+
 1. Deploy and launch envoy-playground
 2. Examine the default envoy config on the right pane, and the resulting httpbin in the right pane
 3. Make a change to the configuration, for example, add a `host_rewrite: itaysk.com` to the default route
